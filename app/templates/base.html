@@ -5,37 +5,48 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+	<!-- Roboto -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- /Roboto -->
 </head>
 <body>
 
 	<header class="header">
-		<div class="header__left">
-			<ul class="menu">
-				<li class="menu-item">
-					<a href="#" class="menu-item__link">гланая</a>
-				</li>
-				<li class="menu-item">
-					<a href="#" class="menu-item__link">статьи</a>
-				</li>
-				<li>
-					<a href="#" class="menu-item__link">обо мне</a>
-				</li>
-				<li class="menu-item">
-					<a href="#" class="menu-item__link">реклама</a>
-				</li>
-			</ul>
-		</div>
-		<div class="header__right">
+		<div class="header-inner">
 
-			<ul class="menu">
-				<li class="menu-item">
-					<a href="#" class="menu-item__link">Профиль</a>
-				</li>
-				<li class="menu-item">
-					<input type="text" name="" id="" placeholder="Поис по блогу">
-				</li>
-			</ul>
+			<div class="header__left">
+				<ul class="menu">
+					<li class="menu-item">
+						<a href="#" class="menu-item__link">гланая</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-item__link">статьи</a>
+					</li>
+					<li>
+						<a href="#" class="menu-item__link">обо мне</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-item__link">реклама</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__right">
 
+				<ul class="menu">
+					<li class="menu-item">
+						<a href="#" class="menu-item__link">Профиль</a>
+					</li>
+					<li class="menu-item">
+						<input class='search' type="text" name="" id="" placeholder="Поис по блогу">
+					</li>
+				</ul>
+
+			</div>
+			
 		</div>
 	</header>
 
